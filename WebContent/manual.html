@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Manual Attendance</title>
+
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/form-register.css">
+<style>
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+<body>
+	<header>
+		<h1 style="padding-left:29%;font-size:50px" >Attendance Management</h1>
+        
+    </header>
+    <ul>
+		 <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn" style="margin-right:20px">Staff</a>
+				<div class="dropdown-content">
+				  <a href="form-register.html">Staff Registration</a>
+				  <a href="form-login.html">Staff Login</a>
+				</div>
+         </li>
+		 <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Student</a>
+				<div class="dropdown-content">
+				  <a href="student-reg.html">Student Registration</a>
+				  <a href="student-login.html">Student Login</a>
+				</div>
+         </li>
+    </ul>
+    <p style="font-color:blue;text-align:center"><b>Enter ID numbers here:</b></p>
+<form  method="post" action="manual.jsp">
+<textarea style=" height: 100px;width:100%;"name="id" placeholder="enter comma(,) to separate the id number ex:R121683,R121677.." ></textarea><br/>
+<div style="text-align:center">
+	<input type="submit" style="width:100px;height:50px;margin: 0 auto;"></div>
+</form>
+</body>
+</html>
+
